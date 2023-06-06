@@ -1,4 +1,4 @@
-Easy way to access Shared Preference, or we can call like session.
+Easy way to access Shared Preference, or we can call like session. For more customization, you can use [shared_preferences](https://pub.dev/packages/shared_preferences) package.
 
 ## Features
 

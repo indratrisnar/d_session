@@ -1,5 +1,5 @@
 name: d_session
-description: A new Flutter package project.
+description: Easy way to access Shared Preference and use as Session.
 version: 0.0.1
 homepage: https://github.com/indratrisnar/d_session
 
