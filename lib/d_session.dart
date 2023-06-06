@@ -14,7 +14,7 @@ class DSession {
 
   /// get session data\
   /// use for many data, get by key\
-  static Future<Map?> getCustom(String key) async {
+  static Future<dynamic> getCustom(String key) async {
     final pref = await SharedPreferences.getInstance();
     String? data = pref.getString(key);
     if (data == null) return null;
@@ -23,7 +23,7 @@ class DSession {
 
   /// save session data\
   /// use for many data, set by key\
-  static Future<bool> setCustom(String key, Map data) async {
+  static Future<bool> setCustom(String key, data) async {
     final pref = await SharedPreferences.getInstance();
     bool success = await pref.setString(key, jsonEncode(data));
     return success;

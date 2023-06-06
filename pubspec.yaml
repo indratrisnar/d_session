@@ -1,10 +1,10 @@
 name: d_session
 description: A new Flutter package project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/indratrisnar/d_session
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

@@ -36,25 +36,20 @@ class Home extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  Map settings = {
-                    'notif': true,
-                    'reminder': true,
-                    'lang': 'id_ID',
-                  };
-                  DSession.setCustom('settings', settings);
+                  DSession.setCustom('isDark', true);
                 },
                 child: const Text('Save'),
               ),
               ElevatedButton(
                 onPressed: () async {
-                  final data = await DSession.getCustom('settings');
+                  final data = await DSession.getCustom('isDark');
                   debugPrint(data.toString());
                 },
                 child: const Text('Get'),
               ),
               ElevatedButton(
                 onPressed: () {
-                  DSession.removeCustom('settings');
+                  DSession.removeCustom('isDark');
                 },
                 child: const Text('Remove'),
               ),

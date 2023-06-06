@@ -1,39 +1,79 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Easy way to access Shared Preference, or we can call like session.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+1. [User](#bar)
+2. [Token](#line)
+   - [Image](#line-image)
+   - [Example](#line-example)
+   - Tutorial
+     - [Line Chart From Data Collection](https://www.youtube.com/watch?v=mdMayNHY7so&list=PLMeCG4xYek-OdumjOowVcNmW_nVPPUVfa&index=7)
+3. [Custom](#pie)
+   - [Image](#pie-image)
+   - [Example](#pie-example)
 
-## Getting started
+### User
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+[Tutorial]()
 
 ```dart
-const like = 'sample';
+Map user = {
+'id': 'aha276avsUHUa',
+'email': 'flutter_d_lux@gmail.com',
+'username': 'indre',
+};
+DSession.setUser(user);
+
+DSession.getUser().then((value) {
+    debugPrint(value.toString());
+    if (value != null) {
+        debugPrint(value['email']);
+    }
+});
+
+DSession.removeUser();
+```
+
+### Token
+
+[Tutorial]()
+
+```dart
+Map data = {
+    'token': 'askuaysuabs',
+    'expire': '2023-10-10 01:01:01',
+};
+DSession.setToken(data);
+
+DSession.getToken().then((value) {
+    debugPrint(value.toString());
+});
+
+DSession.removeToken();
+```
+
+### Custom
+
+For custom, you must set the key. The keyword must be other than:\
+
+- d_session_user
+- d_session_token
+
+[Tutorial]()
+
+```dart
+DSession.setCustom('isDark', true);
+
+final data = await DSession.getCustom('isDark');
+debugPrint(data.toString());
+bool isDark = data??false;
+if(isDark){
+    debugPrint('Dark theme activated');
+}
+
+DSession.removeCustom('isDark');
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+...
