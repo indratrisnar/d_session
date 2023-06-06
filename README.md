@@ -2,17 +2,11 @@ Easy way to access Shared Preference, or we can call like session.
 
 ## Features
 
-1. [User](#bar)
-2. [Token](#line)
-   - [Image](#line-image)
-   - [Example](#line-example)
-   - Tutorial
-     - [Line Chart From Data Collection](https://www.youtube.com/watch?v=mdMayNHY7so&list=PLMeCG4xYek-OdumjOowVcNmW_nVPPUVfa&index=7)
-3. [Custom](#pie)
-   - [Image](#pie-image)
-   - [Example](#pie-example)
+1. [User](#1-user)
+2. [Token](#2-token)
+3. [Custom](#3-custom)
 
-### User
+### 1. User
 
 [Tutorial]()
 
@@ -34,7 +28,7 @@ DSession.getUser().then((value) {
 DSession.removeUser();
 ```
 
-### Token
+### 2. Token
 
 [Tutorial]()
 
@@ -52,7 +46,7 @@ DSession.getToken().then((value) {
 DSession.removeToken();
 ```
 
-### Custom
+### 3. Custom
 
 For custom, you must set the key. The keyword must be other than:\
 
