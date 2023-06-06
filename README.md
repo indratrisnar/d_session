@@ -48,7 +48,7 @@ DSession.removeToken();
 
 ### 3. Custom
 
-For custom, you must set the key. The keyword must be other than:\
+For custom, you must set the key. The keyword must be other than:
 
 - d_session_user
 - d_session_token
@@ -60,7 +60,7 @@ DSession.setCustom('isDark', true);
 
 final data = await DSession.getCustom('isDark');
 debugPrint(data.toString());
-bool isDark = data??false;
+bool isDark = data ?? false;
 if(isDark){
     debugPrint('Dark theme activated');
 }
