@@ -8,8 +8,6 @@ Easy way to access Shared Preference, or we can call like session. For more cust
 
 ### 1. User
 
-[Tutorial]()
-
 ```dart
 Map user = {
 'id': 'aha276avsUHUa',
@@ -29,8 +27,6 @@ DSession.removeUser();
 ```
 
 ### 2. Token
-
-[Tutorial]()
 
 ```dart
 Map data = {
@@ -52,8 +48,6 @@ For custom, you must set the key. The keyword must be other than:
 
 - d_session_user
 - d_session_token
-
-[Tutorial]()
 
 ```dart
 DSession.setCustom('isDark', true);
