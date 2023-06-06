@@ -28,6 +28,3 @@ migrate_working_dir/
 .dart_tool/
 .packages
 build/
-
-linux/flutter/ephemeral/.plugin_symlinks/path_provider_linux
-linux/flutter/ephemeral/.plugin_symlinks/shared_preferences_linux
