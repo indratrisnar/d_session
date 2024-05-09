@@ -9,7 +9,7 @@ Easy way to access Shared Preference, or we can call like session. For more cust
 ### 1. User
 
 ```dart
-Map user = {
+final user = {
 'id': 'aha276avsUHUa',
 'email': 'flutter_d_lux@gmail.com',
 'username': 'indre',
@@ -29,7 +29,7 @@ DSession.removeUser();
 ### 2. Token
 
 ```dart
-Map data = {
+final data = {
     'token': 'askuaysuabs',
     'expire': '2023-10-10 01:01:01',
 };

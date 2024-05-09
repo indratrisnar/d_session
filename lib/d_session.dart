@@ -38,7 +38,7 @@ class DSession {
   }
 
   /// get session user\
-  static Future<Map?> getUser() async {
+  static Future<Map<String, dynamic>?> getUser() async {
     final pref = await SharedPreferences.getInstance();
     String? data = pref.getString(_userKey);
     if (data == null) return null;
@@ -46,7 +46,7 @@ class DSession {
   }
 
   /// save session user\
-  static Future<bool> setUser(Map data) async {
+  static Future<bool> setUser(Map<String, dynamic> data) async {
     final pref = await SharedPreferences.getInstance();
     bool success = await pref.setString(_userKey, jsonEncode(data));
     return success;
@@ -60,7 +60,7 @@ class DSession {
   }
 
   /// get session token
-  static Future<Map?> getToken() async {
+  static Future<Map<String, dynamic>?> getToken() async {
     final pref = await SharedPreferences.getInstance();
     String? data = pref.getString(_tokenKey);
     if (data == null) return null;
@@ -68,7 +68,7 @@ class DSession {
   }
 
   /// save session token
-  static Future<bool> setToken(Map data) async {
+  static Future<bool> setToken(Map<String, dynamic> data) async {
     final pref = await SharedPreferences.getInstance();
     bool success = await pref.setString(_tokenKey, jsonEncode(data));
     return success;

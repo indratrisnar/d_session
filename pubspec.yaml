@@ -1,6 +1,6 @@
 name: d_session
 description: Easy way to access Shared Preference and use as Session.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/indratrisnar/d_session
 
 environment:
